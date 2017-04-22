@@ -1,0 +1,3 @@
+Download the sqlite-jdbc-3.16.1.jar (or the latest version) and place it in your Tomcat /lib folder.
+https://bitbucket.org/xerial/sqlite-jdbc/downloads/
+
