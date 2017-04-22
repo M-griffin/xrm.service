@@ -28,8 +28,7 @@ public class MyResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getIt() {
 
-		String response = "{ 'Name': 'Test Response' }";
-		return Response.status(Response.Status.OK).entity(response).build();
+		return Response.status(Response.Status.OK).entity("{ \"Name\": \"Test Response\" }").build();
 	}
 
 	@GET
@@ -89,5 +88,5 @@ public class MyResource {
 
 	
 
-	String response = "{ \"Name\": \"" + name + "\" }";return Response.status(Response.Status.OK).entity(response).build();
+	return Response.status(Response.Status.OK).entity(("{ \"Name\": \"" + name + "\" }")).build();
 }}
